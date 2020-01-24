@@ -43,33 +43,41 @@ public class MyHashMap {
         this.loadFactor = loadFactor;
     }
 
-    public long put(int key, long value) {
+    public Long put(Integer key, Long value) {
         if ((double) size++ / capacity > loadFactor)
             expandCapacity();
         int hash = key % capacity;
-        if (keys[hash] == null) {
-            keys[hash] = key;
+        if (keys[hash].equals(key)) {
             values[hash] = value;
             return value;
         }
-        else if (keys[hash] == key) {
-            values[hash] = value;
-            return value;
-        }
-        int i;
-        for (i = hash + 1; i < capacity; i++)
+        for (int i = hash; i < capacity; i++)
             if (keys[i] == null) {
                 keys[i] = key;
                 values[i] = value;
-                break;
+                return value;
             }
-        if (i == capacity)
-            for (i = 0; i < hash; i++)
-                if (keys[i] == null) {
-                    keys[i] = key;
-                    values[i] = value;
-                }
+        for (int i = 0; i < hash; i++)
+            if (keys[i] == null) {
+                keys[i] = key;
+                values[i] = value;
+            }
         return value;
+    }
+
+    public Long get(Integer key) {
+        int hash = key % capacity;
+        for (int i = hash; i < capacity; i++)
+            if (keys[i].equals(key))
+                return values[i];
+        for (int i = 0; i < hash; i++)
+            if (keys[i].equals(key))
+                return values[i];
+        return null;
+    }
+
+    public int size() {
+        return size;
     }
 
     private void expandCapacity() {
@@ -79,5 +87,8 @@ public class MyHashMap {
         keys = new Integer[newCapacity];
         Long[] tempV = values;
         values = new Long[newCapacity];
+        for (int i = 0; i < tempK.length; i++)
+            if (keys[i] != null)
+                put(keys[i], values[i]);
     }
 }
