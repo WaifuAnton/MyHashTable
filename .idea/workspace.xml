@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4ed4a90e-c38c-4455-a182-149bef62fe0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Softindex.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Softindex.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/myhashmap/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/myhashmap/MyHashMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,17 +30,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\makar\Documents\Softindex\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Tests.addTwo">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Softindex" />
@@ -46,8 +55,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Softindex" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.addOneHundred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Softindex" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="addOneHundred" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.addTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Softindex" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="addTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.addTwo" />
+        <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.Tests.addOneHundred" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -62,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579869228191</updated>
-      <workItem from="1579869233081" duration="7965000" />
+      <workItem from="1579869233081" duration="12046000" />
     </task>
     <servers />
   </component>
@@ -70,48 +111,53 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1579876187919">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1579881107202">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579876187919" />
-    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1579876187918">
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1579881107202" />
+    <state x="446" y="43" key="#com.intellij.ide.util.MemberChooser" timestamp="1579880057428">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579876187918" />
-    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1579876187918">
+    <state x="446" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1579880057428" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1579882865108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579876187918" />
-    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1579876187919">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579882865108" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1579882865108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579876187919" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1579876188425">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579882865108" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1579882865108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579876188425" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1579876188425">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579882865108" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1579882865108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1579876188425" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1579876188425">
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579882865108" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1579882754969">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1579876188425" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1579876188425">
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579882754969" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1579882754969">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1579876188425" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Main.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1579882754969" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1579882754969">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1579882754969" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1579882754969">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1579882754969" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1579881098075">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1579881098075" />
+    <state x="375" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579881087348">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="375" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1579881087348" />
   </component>
 </project>

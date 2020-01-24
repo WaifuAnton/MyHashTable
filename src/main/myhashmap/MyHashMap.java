@@ -1,7 +1,7 @@
 package myhashmap;
 
 public class MyHashMap {
-    private static final double LOAD_FACTOR = 0.7;
+    private static final double LOAD_FACTOR = 0.75;
     private static final int INITIAL_CAPACITY = 20;
 
     private Integer[] keys;
@@ -47,11 +47,16 @@ public class MyHashMap {
         if ((double) size++ / capacity > loadFactor)
             expandCapacity();
         int hash = key % capacity;
+        if (keys[hash] == null) {
+            values[hash] = value;
+            keys[hash] = key;
+            return value;
+        }
         if (keys[hash].equals(key)) {
             values[hash] = value;
             return value;
         }
-        for (int i = hash; i < capacity; i++)
+        for (int i = hash + 1; i < capacity; i++)
             if (keys[i] == null) {
                 keys[i] = key;
                 values[i] = value;
@@ -80,6 +85,26 @@ public class MyHashMap {
         return size;
     }
 
+    public Integer[] getKeys() {
+        Integer[] keys = new Integer[size];
+        for (int i = 0, j = 0; i < this.keys.length; i++) {
+            if (this.keys[i] == null)
+                continue;
+            keys[j++] = this.keys[i];
+        }
+        return keys;
+    }
+
+    public Long[] getValues() {
+        Long[] values = new Long[size];
+        for (int i = 0, j = 0; i < this.values.length; i++) {
+            if (this.values[i] == null)
+                continue;
+            values[j++] = this.values[i];
+        }
+        return values;
+    }
+
     private void expandCapacity() {
         int newCapacity = (int) (capacity + capacity / loadFactor);
         capacity = newCapacity;
@@ -88,7 +113,19 @@ public class MyHashMap {
         Long[] tempV = values;
         values = new Long[newCapacity];
         for (int i = 0; i < tempK.length; i++)
-            if (keys[i] != null)
-                put(keys[i], values[i]);
+            if (tempK[i] != null)
+                put(tempK[i], tempV[i]);
+    }
+
+    @Override
+    public String toString() {
+        Long[] values = getValues();
+        Integer[] keys = getKeys();
+        StringBuilder stringBuilder = new StringBuilder("{");
+        for (int i = 0; i < values.length; i++)
+            stringBuilder.append(keys[i] + "=" + values[i] + ", ");
+        stringBuilder.delete(stringBuilder.length() - 2, stringBuilder.length());
+        stringBuilder.append("}");
+        return stringBuilder.toString();
     }
 }
