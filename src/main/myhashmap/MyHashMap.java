@@ -44,34 +44,40 @@ public class MyHashMap {
     }
 
     public long put(int key, long value) {
-        if ((double) size / capacity > loadFactor)
+        if ((double) size++ / capacity > loadFactor)
             expandCapacity();
         int hash = key % capacity;
-        if (keys[hash] == null)
+        if (keys[hash] == null) {
             keys[hash] = key;
-        else if (keys[hash] == key)
             values[hash] = value;
-        else {
-            int i;
-            for (i = hash + 1; i < capacity; i++)
+            return value;
+        }
+        else if (keys[hash] == key) {
+            values[hash] = value;
+            return value;
+        }
+        int i;
+        for (i = hash + 1; i < capacity; i++)
+            if (keys[i] == null) {
+                keys[i] = key;
+                values[i] = value;
+                break;
+            }
+        if (i == capacity)
+            for (i = 0; i < hash; i++)
                 if (keys[i] == null) {
                     keys[i] = key;
                     values[i] = value;
-                    break;
                 }
-//            if (i == capacity)
-//                for (i = 0; i < hash; i++)
-//                    if
-        }
         return value;
     }
 
     private void expandCapacity() {
         int newCapacity = (int) (capacity + capacity / loadFactor);
         capacity = newCapacity;
-        Long[] tempV = values;
-        values = new Long[newCapacity];
         Integer[] tempK = keys;
         keys = new Integer[newCapacity];
+        Long[] tempV = values;
+        values = new Long[newCapacity];
     }
 }
